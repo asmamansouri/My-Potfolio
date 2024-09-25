@@ -13,6 +13,7 @@ body {
   background-image: url(./images/back-image.avif);
   color: var(--white);
   background-size: cover;
+  
 }
 header {
   display: flex;
@@ -74,11 +75,29 @@ main {
   aside {
     grid-area: sidebar;
     border-right: 10px solid rgba(255, 255, 255, 0.514);
-  }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 20vw;
+            height: 32vh;
+            border-radius: 50%;
+            border: 10px solid white;
+            transition: transform 0.3s ease;
+            margin-top: 30px;
+    }
+    img:hover{
+        transform: scale(1.1);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+}
+  
   section{
     border-bottom: 10px solid rgba(255, 255, 255, 0.516);
   }
 }
 footer{
     border-top: 10px solid rgba(255, 255, 255, 0.561);
+    height: 30vh;
 }
