@@ -1,5 +1,5 @@
 html {
-  --dark-black: rgba(57, 52, 52, 0.106);
+  --dark-black: #0d0b16aa;
   --white: white;
 }
 :root {
@@ -67,12 +67,18 @@ main {
   display: grid;
   grid-template-columns: 30% 70%;
   grid-template-rows: repeat(3, 1fr);
-  gap: 20px;
   grid-template-areas:
     "sidebar main"
     "sidebar main"
     "sidebar main";
   aside {
     grid-area: sidebar;
+    border-right: 10px solid rgba(255, 255, 255, 0.514);
   }
+  section{
+    border-bottom: 10px solid rgba(255, 255, 255, 0.516);
+  }
+}
+footer{
+    border-top: 10px solid rgba(255, 255, 255, 0.561);
 }
