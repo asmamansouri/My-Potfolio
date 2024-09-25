@@ -1,0 +1,40 @@
+:root {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  font-size: 1.5rem;
+  --dark-black: rgb(57, 52, 52);
+  --white: white;
+}
+body {
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: var(--dark-black);
+  color: var(--white);
+  ul {
+    list-style-type: none;
+    li {
+      display: inline;
+      margin: auto 20px;
+    }
+  }
+  a {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--white);
+  }
+}
+main {
+  margin-top: 10vh;
+  min-height: 50vh;
+  background-color: red;
+}
