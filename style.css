@@ -10,7 +10,9 @@ html {
   font-size: 1.5rem;
 }
 body {
-    background-image: ;
+    background-image: url(./images/back-image.avif);
+    color: var(--white);
+    background-size: cover;
 }
 header {
   display: flex;
@@ -62,5 +64,5 @@ header {
 main {
   margin-top: 10vh;
   min-height: 50vh;
-  background-color: red;
+  /* background-color: red; */
 }
