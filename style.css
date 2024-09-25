@@ -10,9 +10,9 @@ html {
   font-size: 1.5rem;
 }
 body {
-    background-image: url(./images/back-image.avif);
-    color: var(--white);
-    background-size: cover;
+  background-image: url(./images/back-image.avif);
+  color: var(--white);
+  background-size: cover;
 }
 header {
   display: flex;
@@ -32,7 +32,7 @@ header {
       margin: auto 20px;
     }
   }
-  i{
+  i {
     margin-right: 5px;
   }
   a {
@@ -42,7 +42,7 @@ header {
     font-weight: bold;
     transition: color 0.3s ease-in-out;
   }
- /* add transition underline to link in navbar */
+  /* add transition underline to link in navbar */
   a::after {
     content: "";
     position: absolute;
@@ -63,6 +63,16 @@ header {
 }
 main {
   margin-top: 10vh;
-  min-height: 50vh;
-  /* background-color: red; */
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+  grid-template-areas:
+    "sidebar main"
+    "sidebar main"
+    "sidebar main";
+  aside {
+    grid-area: sidebar;
+  }
 }
