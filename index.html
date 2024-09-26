@@ -37,12 +37,40 @@
         <h2>I'm a Web developer</h2>
         <img src="./images/profile.png" alt="avatar" />
       </aside>
-      <section >About me
-        
-      </section>
+      <section>About me</section>
       <section>Experiences</section>
       <section>projects</section>
     </main>
-    <footer>contact me in social media</footer>
+    <footer>
+      <div class="form-foot">
+        <h4>Get in Touch</h4>
+        <form name="form1" action="#" method="POST" accept-charset="UTF-8">
+          <input
+            id="name"
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required=""
+          />
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            required=""
+          />
+          <textarea
+            id="textArea"
+            name="message"
+            placeholder="Type your Message"
+            required=""
+          ></textarea>
+
+          <button id="lnch" type="button" value="Send">
+            Send <i class="fas fa-space-shuttle"></i>
+          </button>
+        </form>
+      </div>
+    </footer>
   </body>
 </html>

@@ -7,7 +7,7 @@ html {
   padding: 0;
   font-family: sans-serif;
   box-sizing: border-box;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 body {
   background-image: url(./images/back-image.avif);
@@ -16,6 +16,7 @@ body {
   
 }
 header {
+    font-size: 0.8rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -100,6 +101,59 @@ main {
     border-bottom: 10px solid rgba(255, 255, 255, 0.516);
     
   }
+}
+footer{
+    border-top: 10px solid rgba(255, 255, 255, 0.516);
+    min-height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .form-foot{
+        display: flex;
+        flex-direction:column;
+        width: 40%;
+        h4{
+            padding-bottom: 5px;
+            border-bottom: 2px solid hotpink;
+        }
+        form{
+            width: 100%;
+            input,textarea{
+                display: block;
+                color: white;
+                font-size: large;
+                width: 100%;
+                margin-bottom: 10px;
+                background:transparent;
+                outline: none;
+                border: none;
+                border-bottom: 2px solid hotpink;
+                padding: 10px;
+            }
+            textarea{
+                height: 50%;
+            }
+            input::placeholder,textarea::placeholder{
+                font-size: large;
+                color: white;
+            }
+            input:focus,textarea:focus{
+                outline: 2px solid hotpink;
+                box-shadow: 2px 2px 10px hotpink;
+            }
+            button{
+                width: 50%;
+                height: 50px;
+                margin-left: 25%;
+                background-color: rgba(255, 105, 180, 0.744);
+                color: white;
+                font-size: 1em;
+                font-weight: bold;
+                border-radius: 20%;
+                margin-top: 10px;
+            }
+        }
+    }
 }
 /* aside display none 
 navbar klein werden 
