@@ -74,7 +74,7 @@ main {
     "sidebar main";
   aside {
     grid-area: sidebar;
-    border-right: 10px solid rgba(255, 255, 255, 0.514);
+    /* border-right: 10px solid rgba(255, 255, 255, 0.514); */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -98,15 +98,18 @@ main {
   }
 
   section {
-    border-bottom: 10px solid rgba(255, 255, 255, 0.516);
+    
     padding: 10px;
     h3{
       text-shadow: 5px 5px 5px hotpink;
       text-decoration: underline;
     }
   }
+  .about{
+    border-bottom: 10px solid rgba(255, 255, 255, 0.516);
+  }
   .skills{
-    
+    border-bottom: 10px solid rgba(255, 255, 255, 0.516);
    .skill-box{
     display: flex;
     justify-content: center;
@@ -121,6 +124,7 @@ main {
       height: 20vh;
       background-size: cover;
       background-repeat: no-repeat;
+      background-position: center;
     }
     div:nth-child(1){
       background-image: url(./images/html.jpeg);
@@ -260,6 +264,18 @@ footer {
     color: #fff;
   }
 }
-/* aside display none 
+@media (max-width:600px){
+  aside{
+    display: none;
+  }
+  .skill-box{
+    flex-direction: column;
+  }
+footer{
+  flex-direction: column;
+}
+}
+/* responsive
+aside display none 
 navbar klein werden 
 ein form in footer*/
