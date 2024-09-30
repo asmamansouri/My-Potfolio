@@ -5,7 +5,7 @@ html {
 :root {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   box-sizing: border-box;
   font-size: 1.5rem;
 }
@@ -98,6 +98,12 @@ main {
 
   section {
     border-bottom: 10px solid rgba(255, 255, 255, 0.516);
+    padding: 10px;
+    h3{
+      text-shadow: 5px 5px 5px hotpink;
+      text-decoration: underline;
+    }
+    
   }
 }
 footer {
@@ -159,9 +165,14 @@ footer {
   }
   .social-foot {
     width: 30%;
-    display: flex;
     padding-left: 10%;
-    gap: 20px;
+    h4{
+      display: block;
+    }
+    div{
+      display: flex;
+      gap: 20px;
+    }
      a {
     text-decoration: none;
     color: white;
