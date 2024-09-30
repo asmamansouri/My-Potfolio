@@ -89,7 +89,8 @@ main {
     }
     img:hover {
       transform: scale(1.1);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); */
+      box-shadow: 2px 2px 20px hotpink;
     }
     h2 {
       font-size: 100%;
@@ -103,7 +104,41 @@ main {
       text-shadow: 5px 5px 5px hotpink;
       text-decoration: underline;
     }
+  }
+  .skills{
     
+   .skill-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+    div{
+      border: 2px solid hotpink;
+      border-radius: 15%;
+      width: 15vw;
+      height: 20vh;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    div:nth-child(1){
+      background-image: url(./images/html.jpeg);
+      }
+    div:nth-child(2){
+      background-image: url(./images/css.png);
+        }
+    div:nth-child(3){
+      background-image: url(./images/github.jpeg);
+       } 
+    div:nth-child(4){
+       background-image: url(./images/vscode.jpeg);
+      }
+      div:hover {
+        transform: scale(1.1);
+        box-shadow: 2px 2px 20px hotpink;
+      }
+   }
   }
 }
 footer {
