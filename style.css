@@ -125,6 +125,7 @@ main {
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
+      padding: 5px;
     }
     div:nth-child(1){
       background-image: url(./images/html.jpeg);
@@ -144,7 +145,51 @@ main {
       }
    }
   }
-}
+  .project{
+    .project-box{
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+    div{
+      border: 2px solid hotpink;
+      border-radius: 15%;
+      width: 15vw;
+      height: 20vh;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      padding: 5px;
+    }
+    p{
+      opacity: 0;
+    }
+    div:nth-child(1){
+      background-image: url(./images/project1.png);
+      }
+    div:nth-child(2){
+      background-image: url(./images/project2.png);
+        }
+    div:nth-child(3){
+      background-image: url(./images/project3.png);
+       } 
+    div:nth-child(4){
+       background-image: url(./images/project4.png);
+      }
+      div:hover {
+        transform: scale(1.8);
+        box-shadow: 2px 2px 20px hotpink;
+        p{
+          opacity: 1;
+          font-weight: bold;
+          color: rgb(0, 0, 0);
+        }
+      }
+   }
+    }
+  }
 footer {
   border-top: 10px solid rgba(255, 255, 255, 0.516);
   min-height: 40vh;
@@ -264,7 +309,10 @@ footer {
     color: #fff;
   }
 }
-@media (max-width:600px){
+@media (min-width:600px){
+  body {
+    background-color: lightblue;
+  }
   aside{
     display: none;
   }
