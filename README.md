@@ -22,4 +22,7 @@ The portfolio website highlights Asma Mansouri's web development skills and incl
 - **Projects Section:** Displays previous projects with hover effects revealing descriptions.
 - **Contact Form:** Includes a functional contact form using `mailto` for direct communication.
 - **Social Links:** Links to social profiles such as Twitter, LinkedIn, Instagram, and GitHub.
+- 
 
+
+[Screencast from 01.10.2024 09:06:04.webm](https://github.com/user-attachments/assets/02f93ef0-e532-48a2-84ef-300bf016c761)
